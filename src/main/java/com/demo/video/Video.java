@@ -12,9 +12,13 @@ public class Video {
 
     private String title;
     private String description;
-    private int year;
+    private Integer year;
     private String duration;
+
+    @Column(name = "thumbnail_url")
     private String thumbnailUrl;
+
+    @Column(name = "drive_file_id")
     private String driveFileId;
 
     @ElementCollection(fetch = FetchType.EAGER)
