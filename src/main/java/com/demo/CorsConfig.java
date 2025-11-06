@@ -15,9 +15,14 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
                         .allowedOrigins(
+                                // Local development
                                 "http://localhost:6085",
                                 "http://localhost:5173",
-                                "http://localhost:8080"
+                                "http://localhost:8080",
+                                // AWS deployed frontend
+                                "http://54.163.42.54",   // if served on default port 80
+                                "http://54.163.42.54:6085", // if served on custom port
+                                "https://your-domain.com"    // replace with your actual domain if using HTTPS
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
