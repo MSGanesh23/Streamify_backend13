@@ -19,10 +19,12 @@ public class CorsConfig {
                                 "http://localhost:6085",
                                 "http://localhost:5173",
                                 "http://localhost:8080",
-                                // AWS deployed frontend
-                                "http://54.163.42.54",   // if served on default port 80
-                                "http://54.163.42.54:6085", // if served on custom port
-                                "https://your-domain.com"    // replace with your actual domain if using HTTPS
+                            
+                                "http://98.91.0.193:6085",
+                                // New IP added
+                                "https://98.91.0.193",
+                                // Your actual domain
+                                "https://your-domain.com"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
@@ -31,3 +33,4 @@ public class CorsConfig {
         };
     }
 }
+
