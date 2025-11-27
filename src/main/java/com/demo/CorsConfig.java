@@ -19,6 +19,8 @@ public class CorsConfig {
                                 "http://localhost:6085",
                                 "http://localhost:5173",
                                 "http://localhost:8080",
+                                "http://localhost:80",
+                            
                             
                                 "http://98.91.0.193:6085",
                                 // New IP added
